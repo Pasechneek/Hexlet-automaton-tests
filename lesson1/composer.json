@@ -1,0 +1,16 @@
+{
+    "name": "academic92/lesson1",
+    "description": "tests",
+    "autoload": {
+        "psr-4": {
+            "Academic92\\Lesson1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pasechneek",
+            "email": "danil.merkurev@yandex.com"
+        }
+    ],
+    "require": {}
+}
