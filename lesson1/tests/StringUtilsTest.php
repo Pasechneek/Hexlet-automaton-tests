@@ -14,7 +14,6 @@ echo "test starts!\n";
 Assert::eq(myCapitalize('hello'), 'Hello');
 Assert::eq(myCapitalize(''), '');
 
-
 //if (myCapitalize('hello') !== 'Hello') {
 //  throw new \Exception('Функция работает неверно!');
 //}
@@ -22,6 +21,5 @@ Assert::eq(myCapitalize(''), '');
 //if (myCapitalize('') !== '') {
   //  throw new \Exception('Функция работает неверно!');
  // }
-
   echo "\neverything is OK\n";
 }

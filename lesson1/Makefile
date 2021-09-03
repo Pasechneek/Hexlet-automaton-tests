@@ -1,3 +1,6 @@
+install:
+	composer install
+
 test:
 	php tests/StringUtilsTest.php
 
@@ -15,3 +18,6 @@ start:
 
 start2:
 	composer exec bin/test-start
+
+lint:
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
