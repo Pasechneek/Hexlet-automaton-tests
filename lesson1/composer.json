@@ -1,9 +1,15 @@
 {
     "name": "academic92/lesson1",
     "description": "tests",
+    "license": "OSL-3.0",
     "autoload": {
+        "files": [
+            "/home/academic92/programming/Hexlet-automaton tests/lesson1/tests/StringUtilsTest.php",
+            "/home/academic92/programming/Hexlet-automaton tests/lesson1/src/StringUtils.php",
+            "bin/test-start"
+        ],
         "psr-4": {
-            "Academic92\\Lesson1\\": "src/"
+            "Academic92\\Lesson1\\": "src/StringUtils.php"
         }
     },
     "authors": [
@@ -12,5 +18,7 @@
             "email": "danil.merkurev@yandex.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "webmozart/assert": "^1.10"
+    }
 }

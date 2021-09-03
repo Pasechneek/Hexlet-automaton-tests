@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+namespace Lesson1\Bin\Start;
+
+use function Lesson1\Tests\StringUtilitsTest\MyFirstAutomatonTest;
+use function Lesson1\Src\StringUtilits\myCapitalize;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+MyFirstAutomatonTest();
+
+?>

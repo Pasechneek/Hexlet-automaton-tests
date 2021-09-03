@@ -1,19 +1,27 @@
 <?php
-namespace lesson1\tests\StringUtilitsTest;
+namespace Lesson1\Tests\StringUtilitsTest;
 
-use function lesson1\src\StringUtilits\myCapitalize;
+use Webmozart\Assert\Assert;
+use function Lesson1\Src\StringUtilits\myCapitalize;
 
-require_once 'src/StringUtils.php';
+//require_once 'src/StringUtils.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-//function stringUtilitsTest() {
+function MyFirstAutomatonTest()
+{
 echo "test starts!\n";
-if (myCapitalize('hello') !== 'Hello') {
-  throw new \Exception('Функция работает неверно!');
-}
 
-if (myCapitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-  }
+Assert::eq(myCapitalize('hello'), 'Hello');
+Assert::eq(myCapitalize(''), '');
+
+
+//if (myCapitalize('hello') !== 'Hello') {
+//  throw new \Exception('Функция работает неверно!');
+//}
+
+//if (myCapitalize('') !== '') {
+  //  throw new \Exception('Функция работает неверно!');
+ // }
 
   echo "\neverything is OK\n";
-//}
+}

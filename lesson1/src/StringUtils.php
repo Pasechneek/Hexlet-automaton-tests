@@ -1,5 +1,7 @@
 <?php
-namespace lesson1\src\StringUtilits;
+namespace Lesson1\Src\StringUtilits;
+
+require_once __DIR__ . '/../vendor/autoload.php';
 
 function myCapitalize($text)
 {

@@ -6,7 +6,22 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit4378d6e319da28c56a2ffa43dd60632d
 {
+    public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '9f8d9e908eeb8fb8622a20b9bfda599c' => __DIR__ . '/../..' . '/tests/StringUtilsTest.php',
+        '44f6e52456c2ed7ff43dd7665fc151ee' => __DIR__ . '/../..' . '/src/StringUtils.php',
+        'cb81f85b3a0c012d481d047e1aef8431' => __DIR__ . '/../..' . '/bin/test-start',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Webmozart\\Assert\\' => 17,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
         'A' => 
         array (
             'Academic92\\Lesson1\\' => 19,
@@ -14,14 +29,26 @@ class ComposerStaticInit4378d6e319da28c56a2ffa43dd60632d
     );
 
     public static $prefixDirsPsr4 = array (
+        'Webmozart\\Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
         'Academic92\\Lesson1\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/src/StringUtils.php',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
+        'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
+        'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',
+        'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
